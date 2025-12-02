@@ -544,11 +544,17 @@ export default function App() {
                   <div className="mt-16 pt-8 border-t border-zinc-200 flex justify-between items-center">
                     <span className="font-serif italic text-zinc-500">Thanks for reading.</span>
                     <div className="flex gap-4">
-                       <button className="p-2 rounded-full hover:bg-zinc-100 transition-colors text-zinc-400 hover:text-zinc-900">
+                       {/* <button className="p-2 rounded-full hover:bg-zinc-100 transition-colors text-zinc-400 hover:text-zinc-900">
                          <Twitter size={20} />
                        </button>
                        <button className="p-2 rounded-full hover:bg-zinc-100 transition-colors text-zinc-400 hover:text-zinc-900">
                          <Linkedin size={20} />
+                       </button> */}
+                       <button 
+                        onClick={() => setSelectedPost(null)}
+                        className="p-2 rounded-full hover:bg-zinc-100 transition-colors text-zinc-400 hover:text-zinc-900"
+                       >
+                         <ArrowLeft size={20} />
                        </button>
                     </div>
                   </div>
@@ -602,7 +608,7 @@ export default function App() {
                         href={social.href}
                         target={social.target}
                         rel="noopener noreferrer"
-                        className="text-zinc-400 hover:text-zinc-900 transition-colors transform hover:scale-110"
+                        className="text-black hover:text-zinc-900 transition-colors transform hover:scale-110"
                       >
                         <social.icon size={24} />
                       </a>
