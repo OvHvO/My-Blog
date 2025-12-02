@@ -76,7 +76,7 @@ const BLOG_POSTS = [
   },
   {
     id: 102,
-    date: "2025.09.15",
+    date: "2025.06.15",
     title: "Managing Data in R vs SQL",
     excerpt: "Comparing data transformation techniques in R's Tidyverse with traditional SQL queries for large datasets.",
     readTime: "7 MIN",
@@ -91,7 +91,7 @@ const BLOG_POSTS = [
   },
   {
     id: 103,
-    date: "2025.08.02",
+    date: "2024.10.02",
     title: "The Importance of Role-Based Access Control",
     excerpt: "Lessons learned implementing secure authentication flows in C# for enterprise management systems.",
     readTime: "6 MIN",
