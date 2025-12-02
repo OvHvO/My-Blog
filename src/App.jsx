@@ -27,7 +27,8 @@ const PROJECTS = [
     description: "A real-time multiplayer web app serving as the digital component for Python learning. Built with Node.js & Next.js.",
     tags: ["Next.js", "TypeScript", "MySQL"],
     accent: "text-blue-700", 
-    border: "border-zinc-900"
+    border: "border-zinc-900",
+    link: "https://github.com/OvHvO/BattleShip_TreasureHunt_Hybrid_Game"
   },
   {
     id: 2,
@@ -36,7 +37,8 @@ const PROJECTS = [
     description: "Automated Purchase Order Management System. Modular design integrating inventory, supplier mgmt, and reporting.",
     tags: ["Java", "JavaFX", "Modular"],
     accent: "text-zinc-600",
-    border: "border-zinc-900"
+    border: "border-zinc-900",
+    link: "https://github.com/Ling2609/JavaFX"
   },
   {
     id: 3,
@@ -45,7 +47,8 @@ const PROJECTS = [
     description: "Service Center Management System with role-based access (Admin, Mechanic, Customer) for billing & appointments.",
     tags: ["C#", "WinForms", "SQL Server"],
     accent: "text-emerald-800",
-    border: "border-zinc-900"
+    border: "border-zinc-900",
+    link: "https://github.com/OvHvO/GA_GOAT_IOOP"
   },
   {
     id: 4,
@@ -54,7 +57,8 @@ const PROJECTS = [
     description: "End-to-end retail data analysis. Built a Random Forest model to classify and predict customer product ratings.",
     tags: ["R Language", "Random Forest", "Data Viz"],
     accent: "text-rose-700",
-    border: "border-zinc-900"
+    border: "border-zinc-900",
+    link: "https://github.com/OvHvO/Consumer-Behavior-Analysis-and-Ratings-Prediction-in-Retail-Industry-"
   }
 ];
 
@@ -335,6 +339,13 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {PROJECTS.map((project) => (
+                <a
+                  key={project.id}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
                 <div 
                   key={project.id}
                   className={`
@@ -366,6 +377,7 @@ export default function App() {
                     </div>
                   </div>
                 </div>
+                </a>
               ))}
             </div>
           </section>
