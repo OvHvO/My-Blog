@@ -209,7 +209,7 @@ export default function App() {
           100% { transform: translateX(-50%); }
         }
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 10s linear infinite;
         }
       `}</style>
 
